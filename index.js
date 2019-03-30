@@ -128,7 +128,7 @@ function addToTrackingData(partId, classActivity, studentBehavior, cognState, ti
         Participant: "",
         "Class Activity": "",
         "Student's Specific Behavior": "", 
-        "Cognitive-affective state": "",
+        "On/Off Task": "",
         Date: "",
         TimeStamp: "",
     };
@@ -137,7 +137,7 @@ function addToTrackingData(partId, classActivity, studentBehavior, cognState, ti
     obj.Participant = partId;
     obj["Class Activity"] = classActivity.replace(/,/g, " ");
     obj["Student's Specific Behavior"] = studentBehavior.replace(/,/g, " ");
-    obj["Cognitive-affective state"] = cognState.replace(/,/g, " ");
+    obj["On/Off Task"] = cognState.replace(/,/g, " ");
     let datetimearray = time.split(",");
     obj.Date = datetimearray[0];
     obj.TimeStamp = datetimearray[1];
